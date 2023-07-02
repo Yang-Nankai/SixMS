@@ -145,7 +145,15 @@ export default {
     },
     //跳转到支付的页面
     payHandler(id) {
-      this.$router.replace({ path: "/pay" });
+      const userId = this.user.id; // 替换为实际的学生id
+      const paperId = id; // 替换为实际的试卷id
+      this.$router.replace({
+        path: "/pay",
+        query: {
+          userId: userId,
+          paperId: paperId
+        }
+      });
     },
     // 多选
     selectionChangeHandler(val) {
@@ -153,21 +161,12 @@ export default {
     },
     // 添加/修改
     addOrUpdateHandler(id) {
-      var params = {
-        userId: this.user.id,
-        paperId: id
-      };
       this.$http({
-        url: this.$api.userexaminfo,
+        url: `/userexam/query?userId=${this.user.id}&paperId=${id}`,
         method: "get",
-        params: params
       }).then(({ data }) => {
         if (data && data.code === 0) {
-          if(data.signup === 1){
             this.isSignUp = true;
-          }else {
-            this.isSignUp = false;
-          }
         } else {
           this.isSignUp = false;
         }

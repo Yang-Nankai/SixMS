@@ -49,7 +49,7 @@ public class ExamrecordController {
     private ExamrecordService examrecordService;
     
 
-   	    /**
+    /**
      * 考试记录接口
      */
     @RequestMapping("/groupby")
@@ -130,8 +130,6 @@ public class ExamrecordController {
         return R.ok().put("data", examrecord);
     }
     
-
-
 
     /**
      * 后端保存

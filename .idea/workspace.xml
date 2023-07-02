@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ssmy7gse:war" />
+      <artifact name="sixSM:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/ssmy7gse/src/main/webapp/admin/src/views/modules/exampaperlist",
+    "last_opened_file_path": "D:/Java/DBManage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,8 +60,8 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Web Contexts",
-    "spring.configuration.checksum": "75a04f0dca4f9624948ff3fd0b898668",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "3acf16a8c236bee25a9a902e79282079",
     "ts.external.directory.path": "D:\\Java\\IntelliJ IDEA 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -72,30 +72,20 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\ssmy7gse\src\main\webapp\admin\src\views\modules\exampaperlist" />
       <recent name="D:\Java\ssmy7gse\src\main\webapp\admin\src\views\modules\teacher" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="sixSM" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="sixSM" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ssmy7gse:war">
+        <artifact name="sixSM:war">
           <settings>
             <option name="CONTEXT_PATH" value="/ssmy7gse" />
           </settings>
@@ -176,6 +166,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ssmy7gse:war" />
+          <artifact name="sixSM:war" />
         </option>
       </method>
     </configuration>
@@ -190,28 +181,16 @@
       <updated>1685804871273</updated>
       <workItem from="1685804872843" duration="1021000" />
       <workItem from="1685805906152" duration="1831000" />
-      <workItem from="1685807859273" duration="31910000" />
+      <workItem from="1685807859273" duration="33304000" />
+      <workItem from="1687448969492" duration="119000" />
+      <workItem from="1688018883760" duration="907000" />
+      <workItem from="1688019803499" duration="651000" />
+      <workItem from="1688020466221" duration="19347000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/controller/TeacherController.java</url>
-          <line>170</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/controller/TeacherController.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -26,7 +26,7 @@ export default {
       account: "",
       type: "",
       table: "",
-      obj: ""
+      obj: "",
     };
   },
   mounted() {
@@ -37,14 +37,6 @@ export default {
   },
   methods: {
     submitTap() {
-      // if (!this.name) {
-      //   this.$message.error("请输入收款人姓名");
-      //   return;
-      // }
-      // if (!this.account) {
-      //   this.$message.error("请输入收款人账号");
-      //   return;
-      // }
       if (!this.type) {
         this.$message.error("请选择支付方式");
         return;
@@ -54,11 +46,9 @@ export default {
         cancelButtonText: "取消",
         type: "warning"
       }).then(() => {
-        this.obj.ispay = "已支付";
         this.$http({
-          url: `${this.table}/update`,
-          method: "post",
-          data: this.obj
+          url: `/userexam/pay?userId=${this.$route.query.userId}&paperId=${this.$route.query.paperId}`,
+          method: "get",
         }).then(({ data }) => {
           if (data && data.code === 0) {
             this.$message({

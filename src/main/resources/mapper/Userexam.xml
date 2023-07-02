@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.UserexamDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.UserexamEntity" id="userexamMap">
+        <result property="id" column="id"/>
+        <result property="addtime" column="addtime"/>
+        <result property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="paperid" column="paperid"/>
+        <result property="papername" column="papername"/>
+        <result property="cost" column="cost"/>
+        <result property="signup" column="signup"/>
+    </resultMap>
+
+    <select id="selectListVO"
+            resultType="com.entity.vo.UserexamVO" >
+        SELECT * FROM userexam  userexam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectVO"
+            resultType="com.entity.vo.UserexamVO" >
+        SELECT  userexam.* FROM userexam  userexam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectListView"
+            resultType="com.entity.view.UserexamView" >
+
+        SELECT  userexam.* FROM userexam  userexam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectView"
+            resultType="com.entity.view.UserexamView" >
+        SELECT * FROM userexam  userexam <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+
+</mapper>
