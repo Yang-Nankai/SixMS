@@ -9,5 +9,8 @@
         <module name="sixSM" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SixSM" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
